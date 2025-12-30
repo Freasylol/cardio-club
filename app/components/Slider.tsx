@@ -75,14 +75,14 @@ export default function Slider() {
 
   return (
     <div className="materials">
-      <button
+      <div className="container">
+        <div className="materials__inner">
+            <button
         className="slider__arrow slider__arrow__left"
         onClick={handlePrev}
       >
         ‹
       </button>
-      <div className="container">
-        <div className="materials__inner">
           <h2 className="header__style materials_header">Последние материалы</h2>
           <div className="materials__slider">
             {visibleItems.map((item, index) => (
@@ -103,15 +103,16 @@ export default function Slider() {
                 </div>
               </div>
             ))}
+             <button
+                className="slider__arrow slider__arrow__right"
+                onClick={handleNext}
+            >
+                ›
+      </button>
           </div>
         </div>
       </div>
-      <button
-        className="slider__arrow slider__arrow__right"
-        onClick={handleNext}
-      >
-        ›
-      </button>
+     
     </div>
   );
 }

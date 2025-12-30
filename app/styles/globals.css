@@ -275,6 +275,9 @@ button {
 /* Materials ====================== */
 .materials {
     margin-top: 135px;
+}
+
+.materials__inner {
     position: relative;
 }
 
