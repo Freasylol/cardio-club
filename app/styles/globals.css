@@ -358,7 +358,7 @@ button {
 .slider__arrow__left {
     position: absolute;
     top: 50%;
-    left: 7%;
+    left: -80px;
 
     z-index: 10;
 }
@@ -366,7 +366,7 @@ button {
 .slider__arrow__right {
     position: absolute;
     top: 50%;
-    right: 7%;
+    right: -80px;
 
     z-index: 10;
 }
