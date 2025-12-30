@@ -8,6 +8,7 @@ interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   fontSize?: string;
   padding?: string;
   borderRadius?: string;
+  backgroundColor?: string;
 }
 
 export default function Button({ 
@@ -15,6 +16,7 @@ export default function Button({
   fontSize, 
   padding, 
   borderRadius, 
+  backgroundColor,
   ...props 
 }: ButtonProps) {
   return (
@@ -24,6 +26,7 @@ export default function Button({
         '--button-font-size': fontSize || '20px',
         '--button-padding': padding || '15px 25px',
         '--button-border-radius': borderRadius || '10px',
+        '--button-background-color': backgroundColor || '#4480EA'
       } as React.CSSProperties}
       {...props}
     >
