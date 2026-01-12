@@ -63,13 +63,10 @@ button {
     padding: 0 40px;
 }
 
-.header__style {
-    font-family: var(--font-unbounded);
-    font-weight: 700;
-    font-style: Bold;
-    font-size: 35px;
-
-    color: #4480EA;
+@media (max-width: 1400px) {
+  html {
+    font-size: 14px;
+  }
 }
 
 

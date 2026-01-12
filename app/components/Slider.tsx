@@ -6,7 +6,10 @@ import materialImg1 from "../../public/images/materials__img__1.png";
 import materialImg2 from "../../public/images/materials__img__2.png";
 import materialImg3 from "../../public/images/materials__img__3.png";
 
+import DescriptionText from "./DescriptionText";
+
 import styles from "../styles/Slider.module.css";
+import HeaderText from "./HeaderText";
 
 const materials = [
   {
@@ -85,7 +88,7 @@ export default function Slider() {
       >
         ‹
       </button>
-          <h2 className={`header__style ${styles.materials_header}`}>Последние материалы</h2>
+          <HeaderText className={`header__style ${styles.materials_header}`}>Последние материалы</HeaderText>
           <div className={styles.materials__slider}>
             {visibleItems.map((item, index) => (
               <div className={styles.materials__item} key={index}>
@@ -99,9 +102,9 @@ export default function Slider() {
                   <div className={styles.materials__item__subheader}>
                     {item.subheader}
                   </div>
-                  <div className={styles.materials__item__description}>
+                  <DescriptionText className={styles.materials__item__description}>
                     {item.description}
-                  </div>
+                  </DescriptionText>
                 </div>
               </div>
             ))}

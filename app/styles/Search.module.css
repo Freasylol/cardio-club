@@ -30,10 +30,6 @@
 }
 
 .search__input__text {
-    font-family: var(--font-montserrat);
-    font-weight: 400;
-    font-style: Regular;
-    font-size: .9375rem;
     opacity: .5;
 
     margin-top: .9375rem;

@@ -14,9 +14,9 @@ export default function Intro() {
                     <h1 className={styles.intro__inner__title}>
                         Cardio <span>Club</span>
                     </h1>
-                    <div className={styles.intro__inner__text}>
+                    <DescriptionText className={styles.intro__inner__text}>
                         Cайт для врачей, которые хотят быть в курсе всех новинок кардиологии, терапии и качать свои знания в ЭКГ. Присоединяйся к сообществу, где ведущие специалисты повышают квалификацию и идут в ногу с новейшими исследованиями!
-                    </div>
+                    </DescriptionText>
                     <div className={styles.intro__inner__button__wrapper}>
                         <Button>Поехали!</Button>
                     </div>

@@ -1,31 +1,34 @@
-import styles from "../styles/DescriptionText.module.css";
+import styles from "../styles/HeaderText.module.css";
 import React from "react";
 
 import { type CSSProperties } from "react";
 
-interface DescriptionTextProps extends React.HTMLAttributes<HTMLParagraphElement> {
+interface HeaderTextProps extends React.HTMLAttributes<HTMLParagraphElement> {
   children: React.ReactNode;
   className?: string;
   color?: string;
+  fontSize?: string;
 }
 
-export default function DescriptionText({
+export default function HeaderText({
   children,
   className = "",
   color,
+  fontSize,
   ...props
-}: DescriptionTextProps) {
+}: HeaderTextProps) {
     const styleVars: CSSProperties = {
-        ['--p-color' as string]: color || '#000'
+        ['--h2-color' as string]: color || '#4480EA',
+        ['--h2-fontSize' as string]: fontSize || '2.1875rem',
     }
 
     return (
-        <p
+        <h2
         style={styleVars}
         className={`${styles.text} ${className}`}
         {...props}
         >
         {children}
-        </p>
+        </h2>
     );
 }

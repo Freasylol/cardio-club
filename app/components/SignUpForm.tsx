@@ -75,6 +75,5 @@ export default function SignUpForm() {
                 </Button>
         </form>
       </div>
-    // </div>
   )
 }

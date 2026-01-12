@@ -2,19 +2,6 @@
     margin-top: 6.25rem;
 }
 
-.header {
-    font-family: var(--font-unbounded);
-    font-weight: 700;
-    font-style: Bold;
-    font-size: 2.1875rem;
-    leading-trim: NONE;
-    line-height: 117%;
-    letter-spacing: -2%;
-    vertical-align: bottom;
-  
-    color: #4480EA;
-}
-
 .community__inner {
     margin-top: 3.125rem;
     display: flex;
@@ -30,14 +17,6 @@
 
 .subscription__description {
     width: 80%;
-
-    font-family: var(--font-montserrat);
-    font-weight: 400;
-    font-style: Regular;
-    font-size: 0.925rem;
-    leading-trim: NONE;
-    line-height: 123%;
-    letter-spacing: 0.34px;
 }
 
 .subscription__header {
