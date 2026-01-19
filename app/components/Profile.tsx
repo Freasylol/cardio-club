@@ -4,18 +4,16 @@ import HeaderText from "./HeaderText";
 
 import checkMark from "../../public/images/check.png";
 import exclamationMark from "../../public/images/exclamation.png";
-import settingsIcon from "../../public/images/settings__icon.png";
-import discountIcon from "../../public/images/discount__icon.png";
-import avatarIcon from "../../public/images/avatar__icon.png";
-import chatIcon from "../../public/images/chat__icon.png";
+
 
 import DescriptionText from "./DescriptionText";
+import Input from "./Input";
 
 import Image from "next/image";
 import Button from "./Button";
 import SubHeaderText from "./SubHeaderText";
 
-import profileIcon from "../../public/images/profile-icon.png";
+import ProfileAside from "./ProfileAside";
 
 type SubscriptionStatus = "active" | "inactive";
 
@@ -96,10 +94,10 @@ export default function Profile({ status }: ProfileProps) {
                   >
                     Оплатить<span className={styles.price}>980 ₽</span>
                   </Button>
-                  <input
+                  <Input
                     placeholder="Промокод?"
                     className={styles.rates__pay__input}
-                  ></input>
+                  ></Input>
                   <Button className={styles.rates__pay__btn}>Применить</Button>
                   <DescriptionText className={styles.rates__pay__text}>
                     После оформления подписки вам откроются все статьи в полном
@@ -110,28 +108,7 @@ export default function Profile({ status }: ProfileProps) {
               </div>
             </div>
           </div>
-          <div className={styles.profile__settings}>
-            <div className={styles.profile__settings__inner}>
-              <SubHeaderText className={styles.profile__settings__header}>
-                Ваш профиль
-              </SubHeaderText>
-              <Image className={styles.profile__settings__avatar} src={profileIcon} alt=""></Image>
-              <div className={styles.profile__settings__btns}>
-                <Button backgroundColor="#F4F7FF" color="#4480EA" fontSize=".925rem" padding=".925rem 1rem" className={styles.profile__settings__btn}>
-                  <Image className={styles.profile__settings__icon} src={settingsIcon} alt=""></Image>Настройки
-                </Button>
-                <Button backgroundColor="#F4F7FF" color="#4480EA" fontSize=".925rem" padding=".925rem 1rem" className={styles.profile__settings__btn}>
-                  <Image className={styles.profile__settings__icon} src={discountIcon} alt=""></Image>Мои скидки
-                </Button>
-                <Button fontSize=".925rem" padding=".8rem 1rem" className={styles.profile__settings__btn}>
-                  <Image className={styles.profile__settings__icon} src={avatarIcon} alt=""></Image>Моя подписка
-                </Button>
-                <Button backgroundColor="#F4F7FF" color="#4480EA" fontSize=".925rem" padding=".925rem 1rem" className={styles.profile__settings__btn}>
-                  <Image className={styles.profile__settings__icon} src={chatIcon} alt=""></Image>Поддержка
-                </Button>
-              </div>
-            </div>
-          </div>
+          <ProfileAside></ProfileAside>
         </div>
       </div>
     </div>

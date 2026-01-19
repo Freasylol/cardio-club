@@ -26,7 +26,7 @@ export default function Header() {
                     </nav>
                     <input type="text" placeholder="Поиск" className={styles.nav__input}>
                     </input>
-                    <Link href="/profile" className={styles.nav__profile__link}>
+                    <Link href="/profile/subscription" className={styles.nav__profile__link}>
                         <Image src={profileIcon} className={styles.nav__profile__img} alt=""></Image>
                     </Link>
                 </div>
