@@ -95,7 +95,6 @@ export default function ProfileSettings() {
               </div>
             </div>
           </div>
-          <ProfileAside></ProfileAside>
         </div>
       </div>
     </div>
