@@ -12,19 +12,10 @@ interface InputProps extends InputHTMLAttributes<HTMLInputElement> {
   focusBorderColor?: string;
   className?: string;
   color?: string;
+  disabled?: boolean;
+  value?: string;
 }
 
-/**
- * The Input component is a reusable input field that can be customized with various props.
- * @param {string} fontSize - The font size of the input.
- * @param {string} padding - The padding inside the input.
- * @param {string} borderRadius - The border radius of the input.
- * @param {string} backgroundColor - The background color of the input.
- * @param {string} focusBorderColor - The border color when input is focused.
- * @param {string} className - Additional class names.
- * @param {string} color - Text color inside the input.
- * @param {*} props - Additional props for the input element.
- */
 export default function Input({
   fontSize,
   padding,
@@ -33,6 +24,8 @@ export default function Input({
   focusBorderColor,
   className = "",
   color,
+  disabled = false,
+  value = "",
   ...props
 }: InputProps) {
   const styleVars: CSSProperties = {
@@ -48,6 +41,8 @@ export default function Input({
     <input
       className={`${className} ${styles.input}`}
       style={styleVars}
+      disabled={disabled}
+      defaultValue={value}
       {...props}
     />
   );

@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "../styles/ProfileSubscription.module.css";
+import styles from "../styles/Rates.module.css";
 import HeaderText from "./HeaderText";
 
 import exclamationMark from "../../public/images/exclamation.png";
@@ -9,8 +9,6 @@ import Input from "./Input";
 
 import Image from "next/image";
 import Button from "./Button";
-
-import ProfileAside from "./ProfileAside";
 
 type SubscriptionStatus = "active" | "inactive";
 
@@ -27,7 +25,7 @@ export default function Rates({ status }: ProfileProps) {
   return (
     <div className={styles.rates}>
       <div className={styles.profile__header__wrapper}>
-        <HeaderText color="#000" className="profile__header">
+        <HeaderText color="#000" className={styles.profile__header}>
           Ваша подписка
         </HeaderText>
         <div className={`${styles.profile__header__marker} ${styles[status]}`}>

@@ -16,3 +16,7 @@
   border-color: var(--input-focus-border-color, #4480EA);
   box-shadow: 0 0 0 2px rgba(68, 128, 234, 0.2);
 }
+
+.input:disabled {
+  background-color: #EAEAEA !important;
+}

@@ -91,6 +91,7 @@ export default function ProfileAside({}) {
           </Link>
         </div>
       </div>
+      <Button backgroundColor="#8A1A1A" className={styles.profile__aside__exit}>Выход</Button>
     </div>
   );
 }

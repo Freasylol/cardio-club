@@ -3,7 +3,8 @@ import styles from "../styles/ProfileSettings.module.css";
 
 import Settings from "./Settings"
 
-export default function ProfileSettings() {
+
+export default function ProfileDisco() {
   return (
     <Settings></Settings>
   );
