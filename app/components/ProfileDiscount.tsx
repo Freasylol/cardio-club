@@ -1,11 +1,11 @@
 import React from "react";
 import styles from "../styles/ProfileSettings.module.css";
 
-import Settings from "./Settings"
+import Discount from "./Discount"
 
 
-export default function ProfileDisco() {
+export default function ProfileDiscount() {
   return (
-    <Settings></Settings>
+    <Discount></Discount>
   );
 }
